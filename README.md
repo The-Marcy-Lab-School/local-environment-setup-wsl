@@ -20,7 +20,7 @@ Today, we'll be setting up our local development environment for Windows 10. For
 
 ![taskbar](./assets/taskbar.png)
 
-4. From now on, we'll refer to your Ubuntu Terminal just as **Terminal**.
+4. From now on, we'll refer to your Ubuntu Terminal as just **Terminal**.
 
 ## Set up local Development directory
 
@@ -45,7 +45,11 @@ You can do using the following commands:
 
 ![commands]((./assets/commands.png))
 
-- If you ever want to view these files on your computer in File Explorer: `explorer.exe .`
+3. If you ever want to view these files on your computer in File Explorer, run the command `explore.exe .` in your terminal. File Explore will open your current working directory.
+
+![fileexplorer]((./assets/fileexplorer.png))
+
+
 - Type `code .`
 - Tell your firewall to allow access
 
