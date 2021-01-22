@@ -43,11 +43,11 @@ You can do using the following commands:
 * `mkdir unit-5 unit-6 unit-7 unit-8` to make four folders at once.
 * `ls` to ensure the folders were created.
 
-![commands]((./assets/commands.png))
+![commands](./assets/commands.png)
 
 3. If you ever want to view these files on your computer in File Explorer, run the command `explore.exe .` in your terminal. File Explore will open your current working directory.
 
-![fileexplorer]((./assets/fileexplorer.png))
+![fileexplorer](./assets/fileexplorer.png)
 
 
 - Type `code .`
