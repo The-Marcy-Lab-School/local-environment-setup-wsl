@@ -46,7 +46,7 @@ You can do using the following commands:
 
 ![commands](./assets/commands.png)
 
-3. If you ever want to view these files on your computer in File Explorer, run the command `explore.exe .` in your terminal. File Explore will open your current working directory.
+3. If you ever want to view these files on your computer in File Explorer, run the command `explorer.exe .` in your terminal. File Explore will open your current working directory.
 
 ![fileexplorer](./assets/fileexplorer.png)
 
