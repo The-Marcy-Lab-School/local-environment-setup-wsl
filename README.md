@@ -31,17 +31,17 @@ Today, we'll be setting up our local development environment for Windows 10. For
 2. Using your Terminal as a command line, create a folder structure where you can put all your Marcy Lab code. We recommend:
 ```
 Development
- |- unit-0
- |- unit-1
- |- unit-2
- |- unit-3
+ |- unit-5
+ |- unit-6
+ |- unit-7
+ |- unit-8
  |-      etc...
 ```
 You can do using the following commands:
 * `cd` to navigate to the home directory.
 * `mkdir Development` to create a folder for *all* your work.
 * `cd Development` where you will create more subdirectories.
-* `mkdir unit-0 unit-1 unit-2 unit-3` to make multiple folders at once.
+* `mkdir unit-5 unit-6 unit-7 unit-8` to make multiple folders at once.
 * `ls` to ensure the folders were created.
 
 ![commands](./assets/commands.png)
