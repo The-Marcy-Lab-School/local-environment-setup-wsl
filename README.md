@@ -73,4 +73,4 @@ At this point, you should be able to clone down, work on, and push back up to Gi
 3. Make a minor change to the `README.md` file of your problem set, add and commit that change, and push it back to Github. Double check using the Internet browser that your change was pushed to the remote repo. 
 
 
-### If everything has worked as expected, reach out to Ann for a final validation!
+### If everything has worked as expected, reach out to an instructor for a final validation!
