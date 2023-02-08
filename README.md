@@ -12,7 +12,7 @@ Today, we'll be setting up our local development environment for Windows 10. For
 
 ### Enable WSL and Download VS Code, Node, NPM
 
-1. For the first part of this set up process, following the instructions in [this blog](https://medium.com/@fiqriismail/setup-wsl-on-windows-10-for-your-javascript-development-with-visual-studio-code-f63f75841e5f), except download **Ubuntu 22.04** instead of Ubunt 18.04. 
+1. For the first part of this set up process, following the instructions in [this blog](https://medium.com/@fiqriismail/setup-wsl-on-windows-10-for-your-javascript-development-with-visual-studio-code-f63f75841e5f), except download **Ubuntu 22.04.05 LTS** instead of Ubunt 18.04 LTS. 
 
 2. until your reach the "Creating the ReactJS application and test" section. You do not need to create a ReactJS application. 
 
