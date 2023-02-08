@@ -1,0 +1,82 @@
+Setup WSL on Windows 10 for your JavaScript Development with Visual Studio Code
+If you are developer in the Windows ecosystem, Windows Subsystem for Linux is a great tool available out there. If you are front-end developer in Windows and most of the instructions in CLI for JavaScript development are explained on Linux based shells. Its bit confusing sometimes you type a shell command on your command prompt and nothing works. So what if you could configure WSL in windows and get the leverage of Ubuntu based shell for your development? And in the same time use your favorite windows tools for the development.
+
+In this article I will be focusing on:
+
+Install and configure latest WSL (Ubuntu 18.04 LTS images)
+Install and configure VS Code to communicate with WSL
+Install NodeJS inside WSL
+Create a ReactJS project and execute inside WSL or Terminal from VS Code.
+Lets get started
+
+Install WSL on Windows 10
+Within few easy steps you can get this done. Press Windows Key + S open up the search bar, and type “Windows Features”
+
+
+Searching for Windows Features
+Click on the “Turn Windows features on or off”
+
+
+Select Windows Subsystem for Linux
+Select Windows Subsystem for Linux and click OK. (This will require a restart of windows to get things installed). After that open of the Windows Store app and search for Ubuntu.
+
+You will get the Ubuntu 18.04 LTS in the Windows Store and then click Install.
+
+
+Installing Ubuntu 18.04 LTS
+After installation click the Launch button. For the first time you see this screen that will require your attention to complete the installations. Press any key and wait for few seconds.
+
+
+Completing the installation
+Finally you will have to give a user name and password to complete the installation. Now you are all good to go. Lets do quick check in the shell.
+
+$ lsb_release -a 
+Executing above command you will get an output of what you have.
+
+
+Excellent, lets install VS Code
+
+Installing VS Code and Configure
+Visit this web site and download VS Code
+
+Visual Studio Code - Code Editing. Redefined
+Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud…
+code.visualstudio.com
+
+Download the latest build and install it in your PC.
+
+Now open VS Code. VS Code should automatically detect your WSL installation and suggest an extension.
+
+
+If not, you can click on the “Extensions” tab in VS Code. Search for “Remote WSL” and install.
+
+
+Excellent, we have done our VS Code setup. Close VS Code and go back to the WSL terminal app.
+
+Type the following command
+
+$ code .
+This command will open up the VS Code from WSL. If this is the first time, the server will be setup for communication from WSL to VS Code. This is automatically done and you don’t need to worry about anything.
+
+
+Visual Studio Code will open and will indicate its successfully connected to the server at WSL.
+
+
+Connected to WSL from VS Code
+When you open the terminal from VS Code you will see the bash terminal at WSL.
+
+
+Installing NodeJS (10.x)
+Now go back to WSL app. Inside the command shell type the following command and press enter
+
+$ curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+And then
+
+$ sudo apt-get install -y nodejs
+This will install NodeJS 10.x to your system. And to test your installation type the following command.
+
+node --version
+And you should get an output like this.
+
+
+Successful instillation of NodeJS and test
