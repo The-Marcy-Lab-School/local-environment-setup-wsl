@@ -34,6 +34,8 @@ After installation click the **Launch** button. For the first time you see this 
 
 Finally you will have to give a **username** (must be lowercase) and **password** to complete the installation. You should use the same username and pasword as your computer so it's one less thing you have to remember!
 
+If you ever forget your password to you Ubuntu terminal, you can read [these instructions](https://itsfoss.com/reset-linux-password-wsl/) to reset yoru password. 
+
 Now you are all good to go. Lets do quick check in the shell.
 
 ```
@@ -63,7 +65,7 @@ Excellent, we have done our VS Code setup. Close VS Code and go back to the WSL 
 Type the following command
 
 ```
-$ code .
+code .
 ```
 This command will open up the VS Code from WSL. If this is the first time, the server will be setup for communication from WSL to VS Code. This is automatically done and you don’t need to worry about anything.
 
