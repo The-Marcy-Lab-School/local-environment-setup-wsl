@@ -41,7 +41,7 @@ Now you are all good to go. Lets do quick check in the shell.
 ```
 lsb_release -a 
 ```
-Executing above command in your temrinal will get an output of what you have. Your verion may differ from what you see in the screenshot.
+Executing above command in your temrinal will get an output of what you have. Your version may differ from what you see in the screenshot.
 
 ![](./assets/check.webp)
 
@@ -102,7 +102,7 @@ This will install NodeJS 10.x to your system. And to test your installation type
 node --version
 ```
 
-And you should get an output like this.
+And you should get an output like this. Your version may differ from what you see in the screenshot.
 
 ![.node](./assets/node.webp)
 
