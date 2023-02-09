@@ -22,7 +22,7 @@ Click on the “Turn Windows features on or off”
 
 Select **Windows Subsystem for Linux** and click OK. (This will require a restart of windows to get things installed). 
 
-After your computer stars up again, open the Windows Store (Microsoft Store) app and search for Ubuntu. You will get the **Ubuntu 20.04.05 LTS** in the Windows Store and then click Install to download. *Don't download the latest Ubuntu 22.04.01. That version is not compatible with our environment set up.*
+After your computer stars up again, open the Windows Store (Microsoft Store) app and search for Ubuntu. You will get the **Ubuntu 20.04.05 LTS** in the Windows Store and then click Install to download. *Don't download the latest Ubuntu 22.04.01. That version is not compatible with our environment set up. If you already installed 22.04.01, you can simply delete it from your computer and install the 20.04.05 version.*
 
 ![ubuntu](./assets/ubuntu.png)
 
