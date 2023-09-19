@@ -146,15 +146,4 @@ Your directories and files are in the left panel. You can start a new "VS Code T
 
 Follow these instructions to [set up Github in your terminal](https://github.com/The-Marcy-Lab-School/github-setup).  
 
-## Confirm that everything is working
-
-At this point, you should be able to clone down, work on, and push back up to Github all of your code. Test all of the following: 
-
-Using the terminal, `git clone` one of your old Problem Sets that have tests. Make sure your keep your directory structure clean. You should clone it in an appropriate folder. You can always run `pwd` and `ls` to check where you are. 
-
-In the terminal, `cd` into the problem set you just cloned down. Run `npm install`, then run `npm test` to see the tests run. 
-
-Make a minor change to the `README.md` file of your problem set, add and commit that change, and push it back to Github. Double check using the Internet browser that your change was pushed to the remote repo. 
-
-
 ### If everything has worked as expected, reach out to an instructor for a final validation!
