@@ -12,7 +12,7 @@ Today, we'll be setting up our local development environment for Windows 10. For
 
 ## Enable WSL 
 
-Within few easy steps you can get this done. Press **Windows Key + S** open up the search bar, and type “Windows Features.”
+Within a few easy steps, you can get this done. Press **Windows Key + S** open up the search bar, and type “Windows Features.”
 
 ![windows](./assets/windowfeature.webp)
 
@@ -90,13 +90,18 @@ Now go back to Ubuntu. Inside the terminal type the following command and press 
 ```
 curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 ```
-And then
+
+This command uses the `sudo` command which means "super user do..." to elevate your permissions above the "normal user" when performing this command. You'll find that some commands require elevated permissions so you can always try using `sudo` in front of any command to elevate your permissions.
+
+Note: You will have to enter the admin user's password to achieve this. If you don't know what it is, reach out to your instructor.
+
+Next, enter the command below:
 
 ```
 sudo apt-get install -y nodejs
 ```
 
-This will install NodeJS 10.x to your system. And to test your installation type the following command.
+This will install NodeJS to your system. And to test your installation, enter the following command to see which version of Node you installed.
 
 ```
 node --version
@@ -123,10 +128,10 @@ Development
 ```
 You can do using the following commands:
 * `cd` to navigate to the home directory.
-* `mkdir Development` to create a folder for *all* your work.
+* `mkdir development` to create a folder for *all* your work.
 * `cd Development` where you will create more subdirectories.
 * `mkdir unit-5 unit-6 unit-7 unit-8` to make multiple folders at once.
-* `ls` to ensure the folders were created.
+* `ls` to list the contents of `development/` and ensure the folders were created.
 
 ![commands](./assets/commands.png)
 
