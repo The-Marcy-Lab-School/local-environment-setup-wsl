@@ -93,7 +93,7 @@ curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 
 This command uses the `sudo` command which means "super user do..." to elevate your permissions above the "normal user" when performing this command. You'll find that some commands require elevated permissions so you can always try using `sudo` in front of any command to elevate your permissions.
 
-Note: You will have to enter the admin user's password to achieve this. If you don't know what it is, reach out to your instructor.
+> ⚠️ You will have to enter the admin user's password to use this command. When you type, you won't see anything — this is a security feature so someone can't look over your shoulder and steal your password. Just type out the password and hit enter. If you don't know what your password is, reach out to your instructor.
 
 Next, enter the command below:
 
