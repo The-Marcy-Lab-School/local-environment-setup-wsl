@@ -91,12 +91,12 @@ You should pin Ubuntu Terminal and VS Code to the taskbar since you'll be using 
 2. Check the version of WSL by running `wsl -l -v` and take note of the value under `NAME` and `VERSION`
 3. If the version is 2, you are good to go! You may close Powershell.
 4. If the version is 1, you can change it to version 2 with a command like `wsl --set-version Ubuntu-22.04 2` where you would replace `Ubuntu-22.04` with the name listed under `NAME` from the command in step 2.
-  - You should see "Conversion in progress, this may take a few minutes (it can take as long as 30 minutes or more)
-  - If you see "Please enable the Virtual Machine Platform Windows feature and ensure virtualization is enabled in the BIOS." do the following:
-    - In the Windows search bar, look for "Turn Windows features on or off"
-    - Scroll down and select "Virtual Machine Platform"
-    - Reboot your computer.
-    - Re-open Powershell and return to step 2
+    - You should see "Conversion in progress, this may take a few minutes (it can take as long as 30 minutes or more)
+    - If you see "Please enable the Virtual Machine Platform Windows feature and ensure virtualization is enabled in the BIOS." do the following:
+        - In the Windows search bar, look for "Turn Windows features on or off"
+        - Scroll down and select "Virtual Machine Platform" and then click "Ok"
+        - Reboot your computer.
+        - Re-open Powershell and return to step 2
 
 
 ## Download Node and NPM
