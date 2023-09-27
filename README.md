@@ -85,7 +85,7 @@ You should pin Ubuntu Terminal and VS Code to the taskbar since you'll be using 
 
 ## Ensure you are using WSL 2
 
-> Note: These instructions are based on Microsoft's documentation found here. The instructions published by Microsoft will always be more accurate than the instructions found below. As of 9/27/2023, the instructions below are accurate.
+> Note: These instructions are based on Microsoft's documentation found [here](https://learn.microsoft.com/en-us/windows/wsl/install). The instructions published by Microsoft will always be more accurate than the instructions found below. As of 9/27/2023, the instructions below are accurate.
 
 1. Open Powershell as Administrator. You can do this by right-clicking on Powershell and selecting "Run as Administrator" or by searching for Powershell in the Windows search bar and selecting "Run as Administrator".
 2. Check the version of WSL by running `wsl -l -v` and take note of the value under `NAME` and `VERSION`
@@ -101,7 +101,7 @@ You should pin Ubuntu Terminal and VS Code to the taskbar since you'll be using 
 
 ## Download Node and NPM
 
-> Note: These instructions can be found here on Microsoft's documentation site. The instructions published by Microsoft will always be more accurate than the instructions found below. As of 9/27/2023, these instructions below are accurate.
+> Note: These instructions are based on Microsoft's documentation found [here](https://learn.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl). The instructions published by Microsoft will always be more accurate than the instructions found below. As of 9/27/2023, the instructions below are accurate.
 
 1. Go back to the Ubuntu terminal. Inside the terminal, type the following command and press enter:
 
