@@ -20,28 +20,28 @@ Click on the “Turn Windows features on or off”
 
 ![wsl](./assets/wsl.webp)
 
-Select **Windows Subsystem for Linux** and click OK. (This will require a restart of windows to get things installed). 
+Select **Windows Subsystem for Linux** and click OK. (This will require a restart of Windows to get things installed). 
 
-After your computer stars up again, open the Windows Store (Microsoft Store) app and search for Ubuntu. You will get the **Ubuntu 20.04.05 LTS** in the Windows Store and then click Install to download. *Don't download the latest Ubuntu 22.04.01. That version may not be compatible with our environment set up. If you're not able to complete the steps before, you can simply delete 22.04.01 from your computer and install the 20.04.05 version.*
+After your computer stars up again, open the Windows Store (Microsoft Store) app and search for Ubuntu. You will get the **Ubuntu 20.04.05 LTS** in the Windows Store and then click Install to download. *Don't download the latest Ubuntu 22.04.01. That version may not be compatible with our environment setup. If you're not able to complete the steps before, you can simply delete 22.04.01 from your computer and install the 20.04.05 version.*
 
 ![ubuntu](./assets/ubuntu.png)
 
-After installation click the **Launch** button. For the first time you see this screen that will require your attention to complete the installations. Press any key and wait for few seconds. 
+After installation, click the **Launch** button. For the first time, you see this screen that will require your attention to complete the installations. Press any key and wait for few seconds. 
 
 ![terminal](./assets/terminal.webp)
 
 > From now on, we'll refer to your Ubuntu Terminal as just **Terminal**.
 
-Finally you will have to give a **username** (must be lowercase) and **password** to complete the installation. You should use the same username and pasword as your computer so it's one less thing you have to remember!
+Finally, you will have to give a **username** (must be lowercase) and **password** to complete the installation. You should use the same username and pasword as your computer so it's one less thing you have to remember!
 
-If you ever forget your password to you Ubuntu terminal, you can read [these instructions](https://itsfoss.com/reset-linux-password-wsl/) to reset yoru password. 
+If you ever forget your password to your Ubuntu terminal, you can read [these instructions](https://itsfoss.com/reset-linux-password-wsl/) to reset your password. 
 
-Now you are all good to go. Lets do quick check in the shell.
+Now you are all good to go. Let's do a quick check in the shell.
 
 ```
 lsb_release -a 
 ```
-Executing above command in your temrinal will get an output of what you have. Your version may differ from what you see in the screenshot.
+Executing the above command in your terminal will return an output of what version of Ubuntu you have. Your version may differ from what you see in the screenshot.
 
 ![](./assets/check.webp)
 
@@ -83,31 +83,39 @@ You should pin Ubuntu Terminal and VS Code to the taskbar since you'll be using 
 
 ![taskbar](./assets/taskbar.png)
 
+## Ensure you are using WSL 2
+
+> Note: These instructions are based on Microsoft's documentation found here. The instructions published by Microsoft will always be more accurate than the instructions found below. As of 9/27/2023, the instructions below are accurate.
+
+1. Open Powershell as Administrator. You can do this by right-clicking on Powershell and selecting "Run as Administrator" or by searching for Powershell in the Windows search bar and selecting "Run as Administrator".
+2. Check the version of WSL by running `wsl -l -v` and take note of the value under `NAME` and `VERSION`
+3. If the version is 2, you are good to go! You may close Powershell.
+4. If the version is 1, you can change it to version 2 with a command like `wsl --set-version Ubuntu-22.04 2` where you would replace `Ubuntu-22.04` with the name listed under `NAME` from the command in step 2.
+  - You should see "Conversion in progress, this may take a few minutes (it can take as long as 30 minutes or more)
+  - If you see "Please enable the Virtual Machine Platform Windows feature and ensure virtualization is enabled in the BIOS." do the following:
+    - In the Windows search bar, look for "Turn Windows features on or off"
+    - Scroll down and select "Virtual Machine Platform"
+    - Reboot your computer.
+    - Re-open Powershell and return to step 2
+
+
 ## Download Node and NPM
 
-Now go back to Ubuntu. Inside the terminal type the following command and press enter.
+> Note: These instructions can be found here on Microsoft's documentation site. The instructions published by Microsoft will always be more accurate than the instructions found below. As of 9/27/2023, these instructions below are accurate.
 
-```
-curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
-```
+1. Go back to the Ubuntu terminal. Inside the terminal, type the following command and press enter:
 
-This command uses the `sudo` command which means "super user do..." to elevate your permissions above the "normal user" when performing this command. You'll find that some commands require elevated permissions so you can always try using `sudo` in front of any command to elevate your permissions.
-
-> ⚠️ You will have to enter the admin user's password to use this command. When you type, you won't see anything — this is a security feature so someone can't look over your shoulder and steal your password. Just type out the password and hit enter. If you don't know what your password is, reach out to your instructor.
-
-Next, enter the command below:
-
-```
-sudo apt-get install -y nodejs
+```sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
 ```
 
-This will install NodeJS to your system. And to test your installation, enter the following command to see which version of Node you installed.
+2. Close the Ubuntu terminal and re-open it
+3. Install the "Long Term Support" version of Node by entering the command `nvm install --lts`.
+4. Confirm that you have Node installed by running the command `node --version` and you should see something like `v18.18.0` in response.
+5. Confirm that you have `npm` installed by running the command `npm --version`, and you should see something like `9.8.1` in response.
 
-```
-node --version
-```
+You are now set up with Node and npm!
 
-And you should get an output like this. Your version may differ from what you see in the screenshot.
 
 ![.node](./assets/node.webp)
 
@@ -119,31 +127,32 @@ Every time you open your Terminal, you'll be in the home directory. Run `pwd` to
 
 Using your Terminal as a command line, create a folder structure where you can put all your Marcy Lab code. We recommend:
 ```
-Development
- |- unit-5
- |- unit-6
+development
+ |- unit-0
+ |- unit-1
+ .....
  |- unit-7
  |- unit-8
- |-      etc...
 ```
 You can do using the following commands:
 * `cd` to navigate to the home directory.
 * `mkdir development` to create a folder for *all* your work.
-* `cd Development` where you will create more subdirectories.
-* `mkdir unit-5 unit-6 unit-7 unit-8` to make multiple folders at once.
+* `cd development` where you will create more subdirectories.
+* `mkdir unit-0 unit-1 unit-2` etc... to make multiple folders at once.
 * `ls` to list the contents of `development/` and ensure the folders were created.
 
 ![commands](./assets/commands.png)
 
-If you ever want to view these files on your computer in File Explorer, run the command `explorer.exe .` in your terminal. File Explore will open your current working directory.
+If you ever want to view these files on your computer in File Explorer, run the command `explorer.exe .` in your terminal. File Explorer will open your current working directory.
 
 ![fileexplorer](./assets/fileexplorer.png)
 
-Next, you should type the command `code .` into your terminal and it will open VS Code for you. Remember this terminal command in the future. It will be very helpful!
+Next, ensure that you are in your `development` directory with the `pwd` command. Then, type the command `code .` into your terminal and it will open VS Code for you. You'll use this command a lot so remember it!
 
-Familiarize yourself with VS Code. This will be your new coding environment. It is very similar to AWS Cloud 9 as long as you **open VS Code via the Terminal** from the **home directory** (you can always navigate to the home directory with `cd` and no path following the command). 
-
-Your directories and files are in the left panel. You can start a new "VS Code Terminal" by selecting Terminal from the top menu bar. The "VS Code Terminal" works *exactly* the same as your Mac "Terminal" and your "AWS Cloud9 Terminal"!
+Familiarize yourself with VS Code. This will be your new coding environment.
+* Your directories and files are in the left panel.
+* You can start a new "VS Code Terminal" by selecting View > Terminal from the top menu bar.
+* The "VS Code Terminal" works *exactly* the same as your Ubuntu "Terminal"!
 
 ![vscode](./assets/vscode.png)
 
