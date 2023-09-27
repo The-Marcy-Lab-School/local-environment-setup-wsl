@@ -33,7 +33,7 @@ After installation, click the **Launch** button. For the first time, you see thi
 
 > From now on, we'll refer to your Ubuntu Terminal as just **Terminal** though other forms of documentation may refer to it as **WSL Terminal**.
 
-Finally, you will have to give a **username** (must be lowercase) and **password** to complete the installation. Don't forget this!
+Finally, you will have to give a **username** (must be lowercase) and **password** to complete the installation. Use your first name as a username and the password `marcy` for simplicity. Don't forget this!
 
 If you ever forget your password to your Ubuntu terminal, you can read [these instructions](https://itsfoss.com/reset-linux-password-wsl/) to reset your password.
 
